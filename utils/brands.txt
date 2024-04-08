@@ -1,0 +1,702 @@
+ac
+drom_models_out
+[]
+dvorniki_models_out
+['ace', 'aceca']
+
+acura
+drom_models_out
+[]
+dvorniki_models_out
+['csx', 'tls']
+
+alfa romeo
+drom_models_out
+['33 stradale', '8c', 'tonale']
+dvorniki_models_out
+['1750-2000', '6', '90', 'alfasud', 'alfasud sprint', 'alfetta', 'arna', 's.z. coupe']
+
+aro
+drom_models_out
+[]
+dvorniki_models_out
+['10']
+
+aston martin
+drom_models_out
+['ar1', 'db5', 'dbx', 'lagonda', 'one-77', 'tickford capri', 'vanquish', 'zagato']
+dvorniki_models_out
+['rapide s']
+
+audi
+drom_models_out
+['90', 'coupe', 'e-tron gt', 'e-tron s', 'e-tron sportback', 'e-tron sportback s', 'q2 e-tron', 'q4 e-tron', 'q4 sportback e-tron', 'q5 e-tron', 'q5 sportback', 'rs e-tron gt', 'rs q3 sportback', 'rs2', 's2', 'sq5 sportback', 'v8']
+dvorniki_models_out
+['rs q2', 'rs q5', 'rs q7', 'rs4 avant', 'rs6 avant', 's1', 'sq2', 'sq3']
+
+avia
+drom_models_out
+[]
+dvorniki_models_out
+['a21-a31']
+
+baic
+drom_models_out
+['bj30', 'bj40 plus', 'bj60', 'bj80', 'bj90', 'bjev ex5', 'eu5', 'eu5 plus', 'eu7', 'ev5', 'rubics cube', 'ruixiang x3', 'ruixiang x5', 'senova x55', 'senova zhixing', 'x3', 'x5', 'x55', 'x7']
+dvorniki_models_out
+[]
+
+barkas
+drom_models_out
+[]
+dvorniki_models_out
+['pick up']
+
+baw
+drom_models_out
+['ace m7', 'calorie', 'fenix 1044', 'fenix 1065', 'fenix 3346', 'fenix 33462', 'fenix 33468', 'tonik', 'yusheng 007']
+dvorniki_models_out
+['fenix', 'groz']
+
+bentley
+drom_models_out
+['brooklands', 'continental', 'eight', 'r-type', 's', 't-series', 'turbo r']
+dvorniki_models_out
+['gtc']
+
+bmw
+drom_models_out
+['02 (e10)', '1-series', '1m', '2-series', '2-series active tourer', '2-series gran tourer', '3-series', '3-series gran turismo', '321', '326', '340', '4-series', '5-series', '5-series gran turismo', '503', '6-series', '6-series gran turismo', '7-series', '8-series', 'e3', 'e9', 'i5', 'ix1', 'ix2', 'm2', 'm3', 'm4', 'm5', 'm6', 'm8', 'neue klasse', 'z1']
+dvorniki_models_out
+['1', '2', '3', '3 gt', '4', '5', '5 gt', '6', '6 gt', '7 serie', '8', 'i3s', 'i8s', 'm1 serie', 'm2 serie', 'm3 serie', 'm4 serie', 'm5 serie', 'm6 serie', 'm8 serie', 'x3m', 'x4m', 'x5m', 'x6m']
+
+brilliance
+drom_models_out
+['h230', 'h530', 'v3']
+dvorniki_models_out
+['bs3', 'bs4', 'bs6', 'cross', 'frv', 'fsv', 'jinbei']
+
+buick
+drom_models_out
+['electra e5', 'envision plus', 'envista', 'excelle', 'excelle gt', 'excelle gx', 'excelle xt', 'gl6', 'gl8', 'gl8 avenir', 'gl8 century', 'gl8 es', 'gl8 firstland', 'lacrosse', 'rainier', 'riviera', 'sail', 'skylark', 'special', 'terraza', 'velite 5', 'velite 6', 'velite 7', 'verano gs', 'verano pro']
+dvorniki_models_out
+['allure', 'century', 'la crosse', 'le sabre', 'rainer', 'roadmaster', 'terazza']
+
+byd
+drom_models_out
+['destroyer 05', 'e1', 'e2', 'e3', 'e5', 'e6', 'f5', 'f7', 'fangchengbao leopard 5', 'frigate 07', 'qin', 'qin plus', 'qin pro', 'seagull', 'seal', 'song', 'song max', 'song plus', 'song pro', 'yangwang u8', 'yuan', 'yuan plus', 'yuan pro']
+dvorniki_models_out
+['f3-r', 'f6', 'g3', 'g3-r', 'g6', 'm6']
+
+cadillac
+drom_models_out
+['ct4', 'ct5', 'escalade iq', 'gt4', 'lyriq']
+dvorniki_models_out
+['allante', 'ats-v', 'cts-v', 'dts l', 'sts-v']
+
+changan
+drom_models_out
+['benben', 'cs15', 'cs85 coupe', 'cs95 plus', 'deepal shenlan g318', 'deepal shenlan s7', 'deepal shenlan sl03', 'eado dt', 'eado plus', 'eado xt', 'hunter', 'kaicene star', 'kaicene star 5', 'kaicene star plus', 'lantop', 'linmax', 'qiyuan a05', 'qiyuan a07', 'qiyuan q05', 'raeton', 'raeton cc', 'raeton plus', 'sc 1030', 'yida']
+dvorniki_models_out
+['avatr 11', 'cs85']
+
+changhe
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+chery
+drom_models_out
+['amulet a15', 'arrizo 3', 'arrizo 5', 'arrizo 5 gt', 'arrizo 5 plus', 'arrizo 5 pro', 'arrizo 5e', 'arrizo 6 pro', 'arrizo 7', 'arrizo 8', 'arrizo ex', 'arrizo gx', 'arrizo m7', 'big ant eq5', 'bonus 3 - a19', 'bonus a13', 'crosseastar', 'e5', 'eq1', 'eq7', 'explore 06', 'fora a21', 'indis s18d', 'kimo a1', 'oriental son', 'qq ice cream', 'qq sweet', 'qq6 s21', 'tiggo 2', 'tiggo 2 pro', 'tiggo 3', 'tiggo 3x', 'tiggo 3xe', 'tiggo 4', 'tiggo 4 pro', 'tiggo 5', 'tiggo 5x', 'tiggo 7', 'tiggo 7 plus', 'tiggo 7 pro', 'tiggo 7 pro max', 'tiggo 7 pro plug-in-hybrid', 'tiggo 8', 'tiggo 8 plus', 'tiggo 8 pro', 'tiggo 8 pro e+ hybrid', 'tiggo 8 pro max', 'tiggo 8 pro plug-in-hybrid', 'tiggo 9', 'tiggo e', 'tiggo t11', 'very a13']
+dvorniki_models_out
+['amulet', 'arrizo', 'beat', 'bonus', 'cross eastar', 'elara', 'eq5', 'estina', 'exeed lx', 'exeed rx', 'exeed txl', 'exeed vx', 'fora', 'indis', 'jaecoo j7', 'jaggi', 'jetour dashing', 'jetour t2', 'jetour x90', 'kaiyi e5', 'karry', 'kimo', 'omoda c5', 'omoda s5', 'qq', 'sweet', 'tiggo', 'very']
+
+chevrolet
+drom_models_out
+['3600', 'blazer k5', 'blazer s-10', 'celebrity', 'damas', 'groove', 'lumina', 'lumina apv', 'menlo', 'monza', 'mw', 'nexia', 'onix', 'sonic', 'van']
+dvorniki_models_out
+['corsa', 'g20', 'g30', 'matiz', 'prizm', 's10', 's15', 'savana', 'spin', 'ss']
+
+chrysler
+drom_models_out
+['180', '300 letter series', 'cirrus', 'cordoba', 'crossfire', 'fifth avenue', 'imperial', 'intrepid', 'newport', 'prowler', 'saratoga']
+dvorniki_models_out
+['caravan', 'cirrius', 'croossfire', 'delta', 'grand caravan']
+
+citroen
+drom_models_out
+['2cv', 'ds3 crossback', 'ds4 cross', 'grand c4 picasso', 'grand c4 spacetourer', 'spacetourer']
+dvorniki_models_out
+['ax', 'axel', 'c3 pluriel', 'c4 grand picasso', 'c4 grand spacetourer', 'cx', 'ds9', 'lna', 'mehari', 'sm', 'spacetourier']
+
+dacia
+drom_models_out
+['logan mcv stepway', 'logan pick-up', 'logan van', 'spring']
+dvorniki_models_out
+['1210', '1300', '1310', '1410', 'duster', 'nova', 'solenza', 'super nova']
+
+dadi
+drom_models_out
+[]
+dvorniki_models_out
+['bdd', 'bliss', 'city', 'courtly', 'shuttle']
+
+daihatsu
+drom_models_out
+['applause', 'atrai', 'atrai7', 'be-go', 'boon luminas', 'charade social', 'charmant', 'cuore', 'delta', 'gran max', 'hijet caddie', 'hijet truck', 'leeza', 'max', 'mebius', 'midget ii', 'mira', 'mira avy', 'mira cocoa', 'mira e:s', 'mira gino 1000', 'mira moderno', 'mira tocot', 'move canbus', 'move latte', 'naked', 'opti', 'pyzar', 'rugger', 'sonica', 'storia', 'taft', 'tanto exe', 'terios kid', 'terios lucia']
+dvorniki_models_out
+['bego', 'coure', 'gran move', 'trevis']
+
+datsun
+drom_models_out
+[]
+dvorniki_models_out
+['go', 'go+', 'redi-go']
+
+delorean
+drom_models_out
+['dmc-12']
+dvorniki_models_out
+['dmc']
+
+dodge
+drom_models_out
+['aries', 'dynasty', 'hornet', 'jcuv', 'raider', 'ram van', 'ramcharger', 'shadow', 'spirit', 'sprinter', 'stealth']
+dvorniki_models_out
+[]
+
+dongfeng
+drom_models_out
+['a9', 'aeolus a30', 'aeolus a60', 'aeolus ax3', 'aeolus ax4', 'aeolus ax5', 'aeolus ax7', 'aeolus ax7 plus', 'aeolus ax7 pro', 'aeolus e70', 'aeolus haohan', 'aeolus haoji', 'aeolus yixuan', 'aeolus yixuan gs', 'aeolus yixuan max', 'ax4', 'captain-t', 'dfa-series', 'dfl-series', 'fengon 500', 'fengon 580', 'fengon 580 pro', 'fengon e3', 'fengon ix5', 'fengon ix7', 'fengon mini ev', 'fengon s560', 'k33-561', 'landian e5', 'mengshi m-hero i 917', 'mpv', 'oting', 'rich', 'rich 6', 'rich 7', 's30', 'shine max', 'sokon v21']
+dvorniki_models_out
+[]
+
+faw
+drom_models_out
+['1041', '6350', '6371', 'bestune b70', 'bestune b70s', 'bestune e01', 'bestune nat', 'bestune t33', 'bestune t55', 'bestune t55s', 'bestune t77', 'bestune t99', 'besturn b30', 'besturn b50', 'besturn b70', 'besturn x40', 'besturn x40 ev', 'besturn x80', 'j5 ca3252/3253', 'j5 ca3312', 'j6 ca3250', 'j6 ca3310', 'j6 ca4250', 'jinn', 'junpai d60', 'landmark', 'oley', 'senia r7', 'senia r9']
+dvorniki_models_out
+['b50', 'b70', 's80', 't55', 't77', 't99', 'x40', 'x80']
+
+ferrari
+drom_models_out
+['296 gtb', '296 gts', '328', '348', '458 italia', '458 spider', '458\xa0speciale', '488 gtb', '488 spider', '488\xa0pista', '575m maranello', '599 gtb fiorano', '599 gto', '612 scaglietti', '812 gts', '812 superfast', 'daytona sp3', 'enzo ferrari', 'f12 berlinetta', 'f12 tdf', 'f40', 'f50', 'f8 spider', 'f8 tributo', 'gtc4lusso', 'monza sp', 'purosangue', 'roma', 'sf90 stradale']
+dvorniki_models_out
+['456', '458', '488', '599', '612', 'f12', 'f8']
+
+fiat
+drom_models_out
+[]
+dvorniki_models_out
+['124', '124 spider', '126', '127', '128', '130', '131', '132', '133', '500c', '500ev', '500l', '500x', '600', 'argenta', 'barchetta', 'brava', 'cinquicento', 'coupe', 'fiorino', 'idea', 'marea', 'marengo', 'multipla', 'qubo', 'siena', 'strada', 'tempra', 'toro']
+
+fisker
+drom_models_out
+['ocean']
+dvorniki_models_out
+[]
+
+ford
+drom_models_out
+['bronco ii', 'cargo', 'contour', 'e-series', 'econovan', 'eifel', 'equator', 'equator sport', 'everest', 'f-max', 'f150', 'f250', 'f350', 'f800', 'focus rs', 'focus st', 'freda', 'galaxie', 'gt', 'ixion', 'laser', 'spectron', 'sportka', 'streetka', 'telstar', 'tempo', 'territory', 'th!nk', 'tourneo connect', 'tourneo courier', 'tourneo custom', 'transit connect', 'transit courier', 'transit custom', 'v8']
+dvorniki_models_out
+['b-max', 'capri', 'courier', 'crown victoria', 'e-100', 'e-150', 'e-250', 'e-350', 'f-150', 'f-250', 'f-350', 'f-450', 'f-550', 'five hundred', 'ka plus', 'street ka', 'thunderbird', 'windstar']
+
+foton
+drom_models_out
+['auman bj10', 'auman bj11', 'auman bj32', 'auman bj33', 'auman bj425', 'auman bj51', 'auman est a', 'aumark bj10', 'aumark bj11', 'conqueror 3', 'conqueror 5', 'conqueror 7', 'conqueror plus', 'mars 7', 'mars 9', 'ollin bj10', 'sauvana', 'toano', 'toano ev', 'tunland', 'tunland f9', 'tunland g7', 'tunland g9', 'view']
+dvorniki_models_out
+['bj', 'forland']
+
+gac
+drom_models_out
+['aion hyper gt', 'aion hyper ht', 'aion hyper ssr', 'aion lx', 'aion lx plus', 'aion s', 'aion s plus', 'aion v', 'aion v plus', 'aion y', 'aion y plus', 'ea6', 'ia5', 'trumpchi', 'trumpchi e8', 'trumpchi e9', 'trumpchi emkoo', 'trumpchi empow', 'trumpchi es9 phev', 'trumpchi ga3', 'trumpchi ga3s', 'trumpchi ga4', 'trumpchi ga4 plus', 'trumpchi ga5', 'trumpchi ga6', 'trumpchi ga8', 'trumpchi ge3', 'trumpchi gm6', 'trumpchi gm8', 'trumpchi gs3', 'trumpchi gs3 power', 'trumpchi gs4', 'trumpchi gs4 coupe', 'trumpchi gs4 plus', 'trumpchi gs5', 'trumpchi gs5 super', 'trumpchi gs7', 'trumpchi gs8', 'trumpchi gs8s', 'trumpchi m6', 'trumpchi m6 pro', 'trumpchi m8', 'way']
+dvorniki_models_out
+[]
+
+geely
+drom_models_out
+['azkarra', 'belgee x50', 'binrui', 'binrui cool', 'binyue', 'borui', 'borui ge', 'boyue', 'boyue cool', 'boyue l', 'boyue pro', 'boyue x', 'emgrand ec7', 'emgrand gl', 'emgrand gt', 'emgrand l', 'emgrand s', 'emgrand x7', 'farizon fx', 'galaxy l7', 'geometry a ge11', 'geometry a pro', 'geometry c ge13', 'geometry e', 'geometry g6', 'geometry m6', 'geometry panda mini', 'gs', 'haoyue', 'haoyue l', 'icon', 'ji yue 01', 'jiaji', 'lc cross', 'mk cross', 'otaka ck', 'preface', 'tugella fy11', 'vision s1', 'vision x1', 'vision x3', 'vision x3 pro', 'vision x6', 'vision x6 pro', 'xingyue', 'xingyue l', 'xingyue s']
+dvorniki_models_out
+['ce', 'ck', 'fc', 'gc5', 'geometry c', 'ha', 'hq', 'lc', 'mr', 'panda', 'sx7', 'tugella', 'ul', 'vision x']
+
+genesis
+drom_models_out
+['eq900', 'gv60', 'gv80 coupe']
+dvorniki_models_out
+[]
+
+gmc
+drom_models_out
+['canyon', 'hummer ev', 'savana', 'typhoon', 'vandura']
+dvorniki_models_out
+['safari', 'savanna', 'yukon xl']
+
+great wall
+drom_models_out
+['coolbear', 'cowry', 'florid', 'hover h3', 'hover h5', 'hover h6', 'hover m2', 'hover m4', 'pao', 'sailor', 'shanhai poer', 'wingle 7']
+dvorniki_models_out
+['deer', 'g5', 'haval', 'haval f7', 'haval f7x', 'ora', 'ora o3', 'pegasus', 'socool', 'steed', 'suv', 'voleex c10', 'voleex c50']
+
+hafei
+drom_models_out
+['brio', 'princip', 'simbo']
+dvorniki_models_out
+['lobo', 'saibao']
+
+haima
+drom_models_out
+['2', '3', '6p', '7', '7x', '7x-e', '8s', 'aishang ev', 'family', 'family f5', 'freema']
+dvorniki_models_out
+[]
+
+haval
+drom_models_out
+['big dog dagou', 'chitu', 'cool dog kagou', 'f5', 'h-dog', 'h1', 'h2s', 'h4', 'h4 pro', 'h5', 'h6 coupe', 'h6s', 'h7', 'h8', 'm6 plus', 'raptor', 'shenshou', 'xialong', 'xialong max']
+dvorniki_models_out
+[]
+
+honda
+drom_models_out
+['1300', 'accord inspire', 'acty', 'acty truck', 'airwave', 'ascot', 'ascot innova', 'avancier', 'ballade', 'beat', 'breeze', 'capa', 'civic ferio', 'civic shuttle', 'civic type r', 'cr-x del sol', 'crossroad', 'domani', 'e', 'e:np1', 'e:ns1', 'edix', 'elysion', 'envix', 'fit aria', 'fit shuttle', 'freed spike', 'freed+', 'grace', 'horizon', 'inspire', 'integra sj', 'jade', 'lagreat', 'life', 'life dunk', 'm-nv', 'mdx', 'mobilio', 'mobilio spike', 'n-box slash', 'n-box+', 'n-one', 'n-van', 'orthia', 'partner', 'passport', 'quint', 'rafaga', 's660', 'saber', 'street', "that's", 'today', 'torneo', 'ur-v', 'vamos', 'vamos hobio', 've-1', 'vigor', 'wr-v', 'x-nv', 'xr-v', 'z', 'zest']
+dvorniki_models_out
+['accord usa', 'brio', 'civic usa', 'tn acty']
+
+hongqi
+drom_models_out
+['e-hs3', 'e-hs9', 'e-qm5', 'h7', 'hq9', 'hs3', 'hs7', 'l5', 'ls7']
+dvorniki_models_out
+[]
+
+hummer
+drom_models_out
+[]
+dvorniki_models_out
+['h2 sut', 'h3t']
+
+hyundai
+drom_models_out
+['aero express', 'aero queen', 'aero space', 'avante', 'casper', 'celesta', 'custo', 'encino', 'grand starex', 'h1', 'hd120', 'hd170', 'hd35', 'hd450', 'hd500', 'hd65', 'hd72', 'hd78', 'i20 active', 'ioniq 5', 'ioniq 6', 'kona electric', 'lafesta', 'lavita', 'libero', 'mighty', 'presto', 's coupe', 'santa fe classic', 'tuscani', 'venue', 'богдан']
+dvorniki_models_out
+['eon', 'excel', 'h-1', 'hb20', 'hd', 'i35', 'ix20', 'pony', 'satellite', 'scoupe', 'stellar', 'xcent']
+
+infiniti
+drom_models_out
+['ex25', 'ex35', 'ex37', 'fx30d', 'fx35', 'fx37', 'fx45', 'fx50', 'g20', 'g25', 'g35', 'g37', 'i35', 'j30', 'jx35', 'm25', 'm35', 'm37', 'm45', 'm56', 'qx30', 'qx4']
+dvorniki_models_out
+['ex', 'fx', 'g', 'jx', 'm']
+
+iran khodro
+drom_models_out
+['tara']
+dvorniki_models_out
+['arisun', 'soren']
+
+isuzu
+drom_models_out
+['117 coupe', 'amigo', 'aska', 'axiom', 'bighorn', 'citibus', 'fargo', 'fargo filly', 'faster', 'filly', 'forward', 'giga', 'i-mark', 'lingtuo', 'mu', 'pa nero', 'piazza nero', 'rodeo', 'wizard']
+dvorniki_models_out
+['ascender', 'campo', 'impulse', 'kb-series', 'pick up', 'serie n']
+
+iveco
+drom_models_out
+['crossway']
+dvorniki_models_out
+['turbo daily']
+
+jac
+drom_models_out
+['binyue', 'hfc 1040k', 'hfc 1045k', 'hfc 1061k', 'iev5', 'iev6e', 'iev6e sport', 'iev6s', 'iev7l', 'iev7s', 'ieva50', 'ievs4', 'jiayue a5', 'js3', 'm1', 'n120', 'n35', 'n56', 'n75', 'n80', 'refine', 'refine a60', 'refine l6 max', 'refine m3', 'refine m5', 'refine m6', 'refine r3', 'refine s2', 'refine s3', 'refine s4', 'refine s5', 'refine s7', 's1', 's3 pro', 's5', 'sehol a5', 'sehol a5 plus', 'sehol aipao', 'sehol e10x', 'sehol e40x', 'sehol qx', 'sehol x4', 'sehol x6', 'sehol x8', 'sehol x8 plus', 'sunray', 't40', 't8', 't9', 'yttrium 3']
+dvorniki_models_out
+['iev4', 'j4', 's2']
+
+jaguar
+drom_models_out
+['sovereign', 'xj220']
+dvorniki_models_out
+['daimler', 'xjsc', 'xk8', 'xkr']
+
+jeep
+drom_models_out
+['avenger', 'gladiator', 'grand commander', 'grand wagoneer']
+dvorniki_models_out
+[]
+
+jetta
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+kia
+drom_models_out
+['borrego', 'cerato koup', 'credos', 'ev5', 'ev6', 'ev9', 'grand carnival', 'k-series', 'k2', 'k3', 'k4', 'k7', 'kx cross', 'kx1', 'kx5', 'kx7', 'morning', 'pegas', 'proceed', 'ray', 'rio x (x-line)', 'rondo', 'sonet', 'x-trek', 'xceed']
+dvorniki_models_out
+['joice', 'k2500', 'k2700', 'k2900', 'koup', 'mentor', 'roadster']
+
+lamborghini
+drom_models_out
+['lm 002', 'revuelto', 'sian']
+dvorniki_models_out
+['lm', 'lm001', 'lm002', 'lm004', 'reventon']
+
+lancia
+drom_models_out
+[]
+dvorniki_models_out
+['a112', 'beta', 'dedra', 'delta', 'flavia', 'fulvia', 'gamma', 'kappa', 'lybra', 'musa', 'phedra', 'prisma', 'thesis', 'trevi', 'voyager', 'y', 'y10', 'ypsilon', 'zeta']
+
+land rover
+drom_models_out
+['discovery sport', 'range rover velar', 'series iii']
+dvorniki_models_out
+['110', '130', '90', 'velar']
+
+landwind
+drom_models_out
+['forward', 'rongyao', 'x2', 'x5 plus', 'xiaoyao']
+dvorniki_models_out
+[]
+
+ldv
+drom_models_out
+[]
+dvorniki_models_out
+['cub', 'pilot']
+
+lexus
+drom_models_out
+['ct200h', 'es200', 'es250', 'es260', 'es300', 'es300h', 'es330', 'es350', 'gs f', 'gs200t', 'gs250', 'gs300', 'gs300h', 'gs350', 'gs400', 'gs430', 'gs450h', 'gs460', 'gx460', 'gx470', 'gx550', 'hs250h', 'is f', 'is200', 'is200d', 'is200t', 'is220d', 'is250', 'is250c', 'is300', 'is300c', 'is300h', 'is350', 'is350c', 'is500', 'lbx', 'lc500', 'lc500h', 'lm300h', 'lm350', 'lm350h', 'lm500h', 'ls350', 'ls400', 'ls430', 'ls460', 'ls460l', 'ls500', 'ls500h', 'ls600h', 'ls600hl', 'lx450', 'lx450d', 'lx470', 'lx500d', 'lx570', 'lx600', 'nx200', 'nx200t', 'nx250', 'nx300', 'nx300h', 'nx350', 'nx350h', 'nx450h+', 'rc f', 'rc200t', 'rc300', 'rc300h', 'rc350', 'rx200t', 'rx270', 'rx300', 'rx330', 'rx350', 'rx350h', 'rx350l', 'rx400h', 'rx450h', 'rx450h+', 'rx450hl', 'rx500h', 'rz300e', 'rz450e', 'sc300', 'sc400', 'sc430', 'tx350', 'tx500h', 'tx550h+', 'ux200', 'ux250h', 'ux300e', 'ux300h']
+dvorniki_models_out
+['ct', 'es', 'gs', 'gx', 'hs', 'is', 'lc', 'lm', 'ls', 'lx', 'nx', 'rc', 'rx', 'rz', 'sc', 'ux']
+
+li
+drom_models_out
+['l7', 'l8', 'one']
+dvorniki_models_out
+[]
+
+lifan
+drom_models_out
+['650 ev', 'celliya', 'foison', 'murman', 'x80']
+dvorniki_models_out
+['320', '520', '620', '630', '720', 'fengshun']
+
+lincoln
+drom_models_out
+['corsair', 'zephyr']
+dvorniki_models_out
+[]
+
+lotus
+drom_models_out
+['2-eleven', 'emeya', 'europa s']
+dvorniki_models_out
+['elan', 'europa']
+
+luxgen
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+maserati
+drom_models_out
+['gransport', 'mc20']
+dvorniki_models_out
+['420', '430', 'biturbo', 'karif']
+
+maybach
+drom_models_out
+['57', '62']
+dvorniki_models_out
+['gls', 's-class', 'serie 240', 'serie 57', 'serie 62']
+
+mazda
+drom_models_out
+['1500', '323c', '323f', '616', '818', 'atenza', 'autozam az-1', 'autozam az-3', 'autozam clef', 'axela', 'az-offroad', 'az-wagon', 'b-series', 'biante', 'bongo', 'bongo brawny', 'bongo friendee', 'capella', 'carol', 'chantez', 'cosmo', 'cronos', 'cx-50', 'cx-60', 'cx-70', 'cx-90', 'efini mpv', 'efini ms-6', 'efini ms-8', 'efini ms-9', 'efini rx-7', 'etude', 'eunos 100', 'eunos 300', 'eunos 500', 'eunos 800', 'eunos cargo', 'eunos cosmo', 'eunos presso', 'eunos roadster', 'familia', 'familia s-wagon', 'flair', 'flair crossover', 'flair wagon', 'lantis', 'laputa', 'luce', 'mazda2', 'mazda3', 'mazda3 mps', 'mazda5', 'mazda6', 'mazda6 mps', 'mazda8', 'miata', 'millenia', 'mx-30', 'navajo', 'persona', 'proceed', 'proceed levante', 'proceed marvie', 'protege', 'revue', 'roadster', 'rx-5', 'savanna rx-7', 'scrum', 'sentia', 'spiano', 'titan', 'verisa']
+dvorniki_models_out
+['2', '3', '3 mps', '5', '6', '6 mps', 'b2500', 'e2200', 'fighter']
+
+mercedes-benz
+drom_models_out
+['190', 'actros 4x2', 'actros 6x2', 'actros 6x4', 'arocs 4x2', 'arocs 4x4', 'arocs 6x2', 'arocs 6x4', 'arocs 6x6', 'arocs 8x2', 'arocs 8x4', 'arocs 8x6', 'arocs 8x8', 'atego', 'clc-class', 'cle-class', 'eqa', 'eqb', 'eqc', 'eqe', 'eqe suv', 'eqs', 'eqs suv', 'eqv', 'glc', 'glc coupe', 'gle', 'gle coupe', 'lk', 'm-class', 'metris', 'o 303', 'slr mclaren', 'sls amg', 'sprinter classic', 't2', 'w111', 'w114', 'w115', 'w123', 'w128', 'w136', 'w143', 'w180', 'w187', 'w189']
+dvorniki_models_out
+['eqa-class', 'eqc-class', 'eqe-class', 'eqs-class', 'glc-class', 'gle-class', 'ml-class', 'slr-class', 'sls', 'tn']
+
+mercury
+drom_models_out
+['milan', 'topaz']
+dvorniki_models_out
+['milan premier', 'monterey', 'mystiquie', 'sable']
+
+mg
+drom_models_out
+['3', '5', '5 scorpio', '6', '6 pro', '7', 'cyberster', 'ezs', 'f', 'hs', 'mgb', 'mulan', 'one', 'pilot', 'rui teng', 'rx8', 'sharp']
+dvorniki_models_out
+['maestro', 'mg 350', 'mg 550', 'mg3', 'mg3 cross', 'mg5', 'mg6', 'mg7', 'zr', 'zt']
+
+mini
+drom_models_out
+['classic', 'crossover', 'hatch']
+dvorniki_models_out
+['cooper', 'cooper s', 'one']
+
+mitsubishi
+drom_models_out
+['3000gt', 'aspire', 'bravo', 'celeste', 'challenger', 'chariot', 'chariot grandis', 'colt plus', 'debonair', 'delica', 'delica cargo', 'delica d:2', 'delica d:3', 'delica d:5', 'delica mini', 'delica van', 'diamante', 'dignity', 'dion', 'ek active', 'ek classy', 'ek custom', 'ek space', 'ek sport', 'ek wagon', 'ek x ev', 'emeraude', 'eterna', 'expo', 'freeca', 'fto', 'fuso canter', 'galant fortis', 'grunder', 'gto', 'i', 'jeep', 'lancer cedia', 'lancer ex', 'lancer fortis', 'legnum', 'libero', 'minica', 'minica toppo', 'minicab', 'minicab miev', 'mirage dingo', 'montero sport', 'outlander sport', 'pajero io', 'pajero junior', 'pajero mini', 'pistachio', 'proudia', 'rvr', 'savrin', 'starion', 'strada', 'toppo', 'toppo bj', 'toppo bj wide', 'town box', 'town box wide', 'triton', 'xpander cross']
+dvorniki_models_out
+['3000 gt', 'canter', 'delica d2', 'delica d5', 'galloper', 'santamo']
+
+nissan
+drom_models_out
+['200sx', 'ad', 'almera classic', 'atlas', 'aura', 'auster', 'avenir', 'avenir salut', 'bassara', 'be-1', 'bluebird maxima', 'bluebird sylphy', 'caravan', 'caravan elgrand', 'cedric', 'cedric cima', 'cefiro', 'cherry', 'cima', 'clipper', 'clipper ev', 'crew', 'cube cubic', 'datsun', 'dayz roox', 'dualis', 'e-nv200', 'elgrand', 'exa', 'expert', 'figaro', 'frontier', 'fuga', 'gloria', 'gloria cima', 'homy', 'homy elgrand', 'hypermini', 'kix', 'lafesta', 'langley', 'lannia', 'largo', 'latio', 'laurel', 'laurel spirit', 'leopard', 'liberta villa', 'liberty', 'lucino', 'march', 'march box', 'micra c+c', 'mistral', 'moco', 'np300', 'nt100 clipper', 'nv', 'nv100 clipper', 'nv350 caravan', 'nx-coupe', 'otti', 'pao', 'pickup', 'pino', 'prairie', 'prairie joy', 'presage', 'presea', 'president', 'primera camino', 'qashqai+2', "r'nessa", 'rasheen', 'rogue sport', 'roox', 's-cargo', 'safari', 'sakura', 'skyline crossover', 'skyline gt-r', 'stagea', 'stanza', 'sunny california', 'sunny rz-1', 'terra', 'terrano ii', 'terrano regulus', 'tiida latio', 'tino', 'vanette serena', 'vanette truck', 'violet', 'volkswagen santana', 'wingroad', 'z']
+dvorniki_models_out
+['evalia', 'nb200', 'nb300', 'vanette nv200']
+
+opel
+drom_models_out
+['1200', '1900', 'admiral', 'astra family', 'astra gtc', 'commodore', 'crossland', 'diplomat', 'kapitan', 'olympia', 'rocks-e', 'speedster', 'vita']
+dvorniki_models_out
+['combo (pcma)', 'commandore', 'crossland x', 'euromidi']
+
+peugeot
+drom_models_out
+['201', '202', '203', '207i', '403', '404', 'j5', 'j9', 'partner origin', 'partner tepee']
+dvorniki_models_out
+['pars', 'ranch']
+
+piaggio
+drom_models_out
+['ape', 'vespa 400']
+dvorniki_models_out
+[]
+
+polestar
+drom_models_out
+['3', '4']
+dvorniki_models_out
+[]
+
+pontiac
+drom_models_out
+['6000', 'aztek', 'fiero', 'sunbird', 'wave']
+dvorniki_models_out
+['aztec', 'firebird trans am', 'g8']
+
+porsche
+drom_models_out
+['918', '968', 'carrera gt', 'cayenne coupe']
+dvorniki_models_out
+[]
+
+ravon
+drom_models_out
+['matiz', 'nexia r3']
+dvorniki_models_out
+['nexia', 'r3']
+
+renault
+drom_models_out
+['austral', 'city k-ze', 'dokker stepway', 'express', 'fluence z.e.', 'kangoo z.e.', 'kerax', 'kwid', 'logan stepway', 'lutecia', 'magnum', 'major', 'mascott', 'maxity', 'midliner', 'premium', 'r5', 'r9', 'scenic rx4', 'sport spider', 't-series']
+dvorniki_models_out
+['12', '15', '17', '18', '20', '30', '4', '5', '8', '9', 'fuego', 'lodgy', 'logan mcv', 'rapid', 'rodeo']
+
+renault samsung
+drom_models_out
+['sm3', 'sm3 z.e.', 'sm5', 'sm6', 'sm7', 'xm3']
+dvorniki_models_out
+['sm-3', 'sm-5', 'sm-6', 'sm-7']
+
+rolls-royce
+drom_models_out
+['20/25', 'corniche', 'park ward', 'silver cloud', 'silver spirit', 'silver spur', 'spectre']
+dvorniki_models_out
+[]
+
+rover
+drom_models_out
+[]
+dvorniki_models_out
+['100 [metro]', '75 wagon', 'mini', 'montego']
+
+saab
+drom_models_out
+['9-2x', '90', '92', '93', '95', '96', '99', 'sonett']
+dvorniki_models_out
+['9-3x']
+
+saipa
+drom_models_out
+['shahin']
+dvorniki_models_out
+['111', '131', '132', '141', 'ario', 'zamyad']
+
+scion
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+seat
+drom_models_out
+['tarraco']
+dvorniki_models_out
+['124', '127', '132', '600', '850', 'arona', 'ateca', 'fura', 'malaga', 'marbella', 'mii', 'panda', 'ritmo', 'ronda']
+
+skoda
+drom_models_out
+['100', '1000/1100 mb', '105/120/125', '1101/1102', '1201', '1202', '1203', '440/445/450', 'enyaq iv', 'enyaq iv coupe', 'garde', 'popular', 'praktik', 'scala']
+dvorniki_models_out
+['105', '110', '130', 'paktik', 'scout']
+
+smart
+drom_models_out
+['#1', '#3', 'city', 'crossblade']
+dvorniki_models_out
+[]
+
+soueast
+drom_models_out
+['a5', 'dx3', 'dx5', 'dx7', 'dx7 prime', 'dx7 xingyue', 'dx8s']
+dvorniki_models_out
+['v3', 'v5', 'v6']
+
+ssangyong
+drom_models_out
+['actyon sports', 'istana', 'kallista', 'korando family', 'korando sports', 'korando turismo', 'musso sports', 'nomad', 'rexton sports', 'rexton sports khan', 'torres evx']
+dvorniki_models_out
+['action new', 'xlv']
+
+subaru
+drom_models_out
+['alcyone', 'ascent', 'b9 tribeca', 'baja', 'brat', 'chiffon', 'crosstrek', 'dex', 'dias wagon', 'domingo', 'exiga', 'exiga crossover 7', 'impreza wrx', 'impreza wrx sti', 'impreza xv', 'layback', 'legacy b4', 'legacy lancaster', 'leone', 'lucra', 'pleo', 'pleo plus', 'r1', 'r2', 'rex', 'sambar', 'sambar truck', 'solterra', 'stella', 'traviq']
+dvorniki_models_out
+['libero']
+
+suzuki
+drom_models_out
+['across', 'aerio', 'alto lapin', 'cappuccino', 'cara', 'carry truck', 'carry van', 'cervo', 'ciaz', 'cultus', 'eeco', 'escudo', 'esteem', 'every', 'forenza', 'fronte', 'fronx', 'grand escudo', 'grand vitara xl-7', 'jimny sierra', 'jimny wide', 'kei', 'landy', 'mighty boy', 'mr wagon', 'palette', 'reno', 's-cross', 's-presso', 'spacia', 'swift+', 'twin', 'verona', 'wagon r plus', 'wagon r smile', 'wagon r solio', 'wagon r wide', 'works', 'x-90', 'xl7']
+dvorniki_models_out
+['apv', 'cappucino', 'carry', 'celerio', 'equator', 'lj 80', 'samurai', 'sj 410', 'sj 413', 'x090', 'xl-7']
+
+tank
+drom_models_out
+['400']
+dvorniki_models_out
+[]
+
+tata
+drom_models_out
+['613', 'telcoline', 'xenon']
+dvorniki_models_out
+['indica', 'indigo', 'safari', 'sumo']
+
+tesla
+drom_models_out
+['cybertruck', 'semi']
+dvorniki_models_out
+[]
+
+toyota
+drom_models_out
+['2000gt', 'allion', 'aristo', 'avanza', 'avensis verso', 'bb', 'belta', 'blade', 'blizzard', 'brevis', 'bz3', 'bz4x', 'c+pod', 'camry gracia', 'camry prominent', 'carina e', 'carina ed', 'cavalier', 'celsior', 'century', 'chaser', 'classic', 'coaster', 'comfort', 'coms', 'corolla altis', 'corolla axio', 'corolla ceres', 'corolla cross', 'corolla fielder', 'corolla fx', 'corolla ii', 'corolla im', 'corolla levin', 'corolla rumion', 'corolla runx', 'corolla spacio', 'corolla verso', 'corona', 'corona exiv', 'corona premio', 'corona sf', 'corsa', 'cresta', 'crown kluger', 'crown majesta', 'crown signia', 'curren', 'cynos', 'deliboy', 'duet', 'estima', 'estima emina', 'estima lucida', 'etios cross', 'frontlander', 'funcargo', 'gaia', 'gr 86', 'granace', 'grand hiace', 'grand highlander', 'granvia', 'gt 86', 'hiace regius', 'hilux surf', 'ipsum', 'isis', 'izoa', 'jpn taxi', 'kluger v', 'land cruiser cygnus', 'land cruiser prado', 'levin', 'lite ace noah', 'lite ace truck', 'mark ii wagon blit', 'mark ii wagon qualis', 'mark x', 'mark x zio', 'master ace surf', 'mega cruiser', 'model f', 'mr-s', 'nadia', 'opa', 'origin', 'passo', 'passo sette', 'pixis epoch', 'pixis joy', 'pixis mega', 'pixis space', 'pixis truck', 'pixis van', 'platz', 'porte', 'premio', 'prius alpha', 'prius c', 'prius phv', 'prius plus', 'prius prime', 'prius v', 'proace city', 'proace verso', 'probox', 'progres', 'pronard', 'publica', 'ractis', 'raize', 'raum', 'regius', 'regius ace', 'reiz', 'sai', 'scepter', 'sd', 'sera', 'sf', 'soarer', 'soluna', 'spade', 'sparky', 'sprinter', 'sprinter carib', 'sprinter marino', 'sprinter trueno', 'succeed', 't100', 'tank', 'touring hiace', 'town ace', 'town ace noah', 'town ace truck', 'toyoace', 'vanguard', 'veloz', 'verossa', 'vios', 'vista', 'vista ardeo', 'vitz', 'voltz', 'wigo', 'wildlander', 'will cypha', 'will vi', 'will vs', 'windom', 'xa', 'yaris ativ', 'yaris cross', 'yaris ia', 'yaris verso']
+dvorniki_models_out
+['caribe', 'gt86', 'ia', 'paseo', 'prado [land cruiser prado]', 'runx', 'tc']
+
+volkswagen
+drom_models_out
+['atlas cross sport', 'id.4 crozz', 'id.4 x', 'id.5', 'id.6 crozz', 'id.6 x', 'id.7', 'id.buzz', 'kaefer', 'lavida', 'lavida xr', 'magotan', 'rabbit', 'saveiro', 'tacqua', 'tavendor', 'tayron x', 'teramont x', 'tiguan allspace', 'tiguan l', 'tiguan x', 'type 2', 'up!', 'xl1']
+dvorniki_models_out
+['1500', '411', 'e-golf', 'e-up', 'eurovan', 'grand california', 'id.6', 'routan', 'santana', 'taigo', 'taro', 'up']
+
+volvo
+drom_models_out
+['343', '345', 'c40', 'em90', 'ex30', 'ex90', 'fe', 'fh', 'fl', 'fm', 'fmx', 'laplander', 'vnl series']
+dvorniki_models_out
+['140', '164', '240', '260', '66', '740', '760', '780', '940', 'p1800']
+
+vortex
+drom_models_out
+['corda', 'tingo']
+dvorniki_models_out
+[]
+
+voyah
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+zeekr
+drom_models_out
+['007', '009']
+dvorniki_models_out
+[]
+
+zotye
+drom_models_out
+['coupa', 'nomade', 't300', 't600 coupe']
+dvorniki_models_out
+['coupa (t600)']
+
+zx
+drom_models_out
+['grandtiger', 'weishi 1949']
+dvorniki_models_out
+['admiral', 'grand tiger']
+
+газ
+drom_models_out
+['12 зим', '13 чайка', '14 чайка', '18', '21 волга', '22 волга', '2330 тигр', '24 волга', '2784', '3102 волга', '31029 волга', '3105 волга', '3110 волга', '31105 волга', '3111 волга', '3306', '3307', '3308', '3309', '3325', '4301', '51', '52', '53', '63', '66', '67', '69', 'валдай 8', 'валдай некст', 'волга сайбер', 'газель некст', 'газель нн', 'газель сити', 'газон некст', 'м-72', 'садко некст', 'саз 3507', 'саз 3512', 'соболь', 'соболь нн', 'трофим']
+dvorniki_models_out
+['волга', 'газон', 'зим', 'чайка']
+
+заз-daewoo
+drom_models_out
+['alpheon', 'bh120', 'bs106', 'cielo', 'g2x', 'kalos', 'labo', 'lacetti', 'lublin 3', 'novus', 'racer', 'rezzo', 'royale', 'tosca', 'winstorm', 'вида', 'ланос', 'сенс', 'форца', 'шанс']
+dvorniki_models_out
+['chance', 'forza', 'musso', 'rexton', 'vida']
+
+зил
+drom_models_out
+['114', '118', '131', '133', '157', '3207', '4104', '4314', '4316', '4331', '4333', '4505', '4506', '4508', '5301 бычок', '554', 'ммз-4502', 'ммз-550']
+dvorniki_models_out
+['5301']
+
+лада
+drom_models_out
+['1111 ока', '2113 самара', '2114 самара', '2115 самара', '2120 надежда', '2129', '4x4 2121 нива', '4x4 2131 нива', '4x4 бронто', '4x4 урбан', 'el lada', 'веста', 'веста кросс', 'веста спорт', 'гранта', 'гранта кросс', 'гранта спорт', 'калина', 'калина кросс', 'калина спорт', 'ларгус', 'ларгус кросс', 'нива (2020-21 гг.)', 'нива бронто', 'нива легенд', 'нива пикап', 'нива тревел', 'приора', 'х-кросс 5', 'х-рей', 'х-рей кросс']
+dvorniki_models_out
+['1111 oka', '2113', '2114', '2115', 'granta', 'kalina', 'largus', 'niva', 'priora', 'vesta', 'xray']
+
+луаз
+drom_models_out
+['1302']
+dvorniki_models_out
+['1301', '1901']
+
+москвич
+drom_models_out
+['2125 комби', '2126 ода', '21261 фабула', '2137', '2138', '2335', '2734', '2901', '3', '3е', '400', '401', '402', '403', '407', '408', '410', '411', '426', '434', '6']
+dvorniki_models_out
+['2126', 'москвич 3', 'москвич 6']
+
+раф
+drom_models_out
+[]
+dvorniki_models_out
+[]
+
+тагаз
+drom_models_out
+['aquila', 'вега', 'мастер', 'роад партнер', 'с10', 'с190', 'тагер', 'харди']
+dvorniki_models_out
+['aquilla', 'road partner', 'tager']
+
+уаз
+drom_models_out
+['3151', '3153', '3159', '3160', 'буханка', 'патриот спорт', 'профи', 'симбир']
+dvorniki_models_out
+['462']
+

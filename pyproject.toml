@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "project-packages"
+version = "0.1.0"
+description = "parsing data from drom.ru"
+authors = ["Your Name <you@example.com>"]
+readme = "README.MD"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+asyncio = "^3.4.3"
+aiohttp = "^3.9.1"
+beautifulsoup4 = "^4.12.2"
+lxml = "^5.1.0"
+pydantic = "^2.5.3"
+loguru = "^0.7.2"
+xlsxwriter = "^3.1.9"
+tenacity = "^8.2.3"
+tqdm = "^4.66.1"
+pre-commit = "^3.6.0"
+mypy = "^1.8.0"
+
+[tool.mypy]
+strict = false
+ignore_errors = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120

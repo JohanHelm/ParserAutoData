@@ -19,6 +19,7 @@ tenacity = "^8.2.3"
 tqdm = "^4.66.1"
 pre-commit = "^3.6.0"
 mypy = "^1.8.0"
+pytest = "^8.1.1"
 
 [tool.mypy]
 strict = false

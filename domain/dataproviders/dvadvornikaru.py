@@ -98,30 +98,36 @@ class WindshieldWiperManager:
             new_brush_data.status = "новый"
             self.dvorniki_data_norm_list.append(new_brush_data)
         elif len_brush_items == 1:
-            if tuple(old_brush_data[0].model_dump().values())[:-3] == tuple(new_brush_data.model_dump().values())[:-3]:
+            if tuple(old_brush_data[0].model_dump().values())[:15] == tuple(new_brush_data.model_dump().values())[:15]:
                 old_brush_data[0].status = "старый"
+                if not old_brush_data[0].previous_scan_date and old_brush_data[0].current_scan_date:
+                    old_brush_data[0].previous_scan_date = old_brush_data[0].current_scan_date
+                    old_brush_data[0].current_scan_date = None
             else:
                 position = self.dvorniki_data_norm_list.index(old_brush_data[0])
+
                 new_brush_data.status = "изменён"
+                new_brush_data.old_brand = old_brush_data[0].norm_brand_name
+                new_brush_data.old_model = old_brush_data[0].norm_model_name
+                new_brush_data.old_start_date = old_brush_data[0].start_date
+                new_brush_data.old_end_date = old_brush_data[0].end_date
+                new_brush_data.old_body_type = old_brush_data[0].body_type
+                new_brush_data.old_body_model = old_brush_data[0].body_model
+                new_brush_data.old_generation = old_brush_data[0].generation
+                new_brush_data.old_restyling = old_brush_data[0].restyling
+                new_brush_data.old_attach_type = old_brush_data[0].attach_type
+                new_brush_data.old_size_1 = old_brush_data[0].size_1
+                new_brush_data.old_size2 = old_brush_data[0].size2
+                new_brush_data.old_size_back = old_brush_data[0].size_back
+                new_brush_data.old_washer = old_brush_data[0].washer
+                new_brush_data.old_heater = old_brush_data[0].heater
+                new_brush_data.old_info = old_brush_data[0].info
+
                 self.dvorniki_data_norm_list[position] = new_brush_data
 
     def normalize_models(self):
         for partially_norm in self.dvorniki_data_norm_list:
             normalize_bad_models(partially_norm)
-
-    def split_model_by_slash(self):
-        for model in self.dvorniki_data_norm_list:
-            splitted_model_names = tuple(filter(None, model.norm_model_name.split("/")))
-            if len(splitted_model_names) > 1:
-                for name in splitted_model_names:
-                    name = name.strip()
-                    split_model = model.__deepcopy__()
-                    split_model.norm_model_name = name
-                    self.dvorniki_data_norm_list.append(split_model)
-
-    def delete_models_with_slash(self):
-        models_without_slash = filter(lambda x: "/" not in x.norm_model_name, self.dvorniki_data_norm_list)
-        self.dvorniki_data_norm_list = sorted(models_without_slash, key=lambda x: x.norm_brand_name)
 
     def pickle_norm_dvorniki(self):
         filename = f"dvorniki_norm_data.pickle"
@@ -151,15 +157,6 @@ class WindshieldWiperManager:
             models.add(entry.norm_model_name)
         return sorted(models)
 
-    # @staticmethod
-    # def static_load_binary(path):
-    #     file_path = path
-    #     with open(file_path, "rb") as handle:
-    #         logger.info(f"open binary file {file_path}")
-    #         data = handle.read()
-    #         data = pickle.loads(data)
-    #         return data
-
     def save_excel(self):
         logger.info("start saving data in excel")
         filename = f"dvorniki_norm_data.xlsx"
@@ -182,10 +179,7 @@ class WindshieldWiperManager:
         self.unpickle_raw_dvorniki()
         self.unpickle_norm_dvorniki()
         self.normalize_raw_dvorniki()
-        # self.split_model_by_slash()
-        # self.delete_models_with_slash()
         self.normalize_models()
         self.pickle_norm_dvorniki()
-        print(len(self.dvorniki_data_norm_list))
-        # self.unpickle_norm_dvorniki()
+        self.unpickle_norm_dvorniki()
         self.save_excel()

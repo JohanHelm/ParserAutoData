@@ -3,7 +3,7 @@ from bs4.element import ResultSet, Tag, NavigableString
 from loguru import logger
 from requests import Response
 
-from domain.models.dvadvornikaru import DvaDvornikaData, MarkData, ModelData, DvaDvornikaBrand, DvaDvornikaModelRaw
+from domain.models.dvadvornikaru import DvaDvornikaBrand, DvaDvornikaModelRaw
 
 PARSE_MODE = "lxml"
 BLOCK_A_P_TEXT: tuple[str, ...] = (

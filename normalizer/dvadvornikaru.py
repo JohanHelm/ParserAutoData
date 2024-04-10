@@ -83,12 +83,6 @@ def info_extractor(data):
     return "No data"
 
 
-def brush_attach_type_extractor(data):
-    for attach_type in ProperNames.BRUSH_ATTACH_TYPES.value:
-        if attach_type in data:
-            return attach_type
-
-
 def brush_front_size_extractor(data):
     p = re.compile(r".*(?P<left>\d{3})\sмм\sи\s(?P<right>\d{3}).*")
     m = p.search(data)
@@ -173,6 +167,7 @@ def extract_brush_data(data) -> BrushModelData:
     )
     return brush_model
 
+
 def normalize_brand(raw_data_item: DvaDvornikaModelRaw) -> str:
     raw_brand_name = raw_data_item.brand_name.lower().strip()
     proper_brand_names = ProperNames.BRANDS.value
@@ -180,14 +175,7 @@ def normalize_brand(raw_data_item: DvaDvornikaModelRaw) -> str:
     return brand_name
 
 
-# def normalize_model(raw_data_item: DvaDvornikaModelRaw) -> str:
-#     norm_brand_name = normalize_brand(raw_data_item)
-#     raw_model_name = raw_data_item.car_model_name.lower().strip()
-#
-#     car_model_name = raw_model_name
-#     return car_model_name
-
-def normalize_bad_models(partially_norm: DvaDvornikaDataNorm) -> str:
+def normalize_bad_models(partially_norm: DvaDvornikaDataNorm):
     brand = partially_norm.norm_brand_name
     bad_name = partially_norm.norm_model_name
     brand_models_dict = ProperNames.MODELS.value.get(brand, {})
@@ -218,3 +206,7 @@ def normalize_raw_dvorniki_data(raw_data_item: DvaDvornikaModelRaw) -> DvaDvorni
         link=raw_data_item.link
     )
     return normalized_dvorniki
+
+
+print(extract_brush_data(
+    'Марка: AC Модель: Ace Родстер\nГоды выпуска: 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005\nРазмер щеток АС Айс: 500 мм\nи 500 мм\nТип крепления передних дворников - крючок\nКак установить щетки на AC Ace →'))

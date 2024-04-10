@@ -7,7 +7,7 @@ from .proper_names import ProperNames
 
 def create_generation(car_model, drom_raw_model: DromRawGenerationsEntity, market) -> DromGenerationEntity:
     brand_name = normalize_brand(drom_raw_model)
-    car_model_name = normalize_model(brand_name, drom_raw_model)
+    car_model_name = normalize_model(drom_raw_model)
     car_data = car_model.find("a")
     short_car_href = car_data.attrs.get("href")
     car_text1 = car_data.find("span", attrs={"class": "e1adi9cz0",
@@ -48,7 +48,7 @@ def normalize_brand(drom_raw_model: DromRawGenerationsEntity) -> str:
     brand_name = proper_brand_names.get(raw_brand_name, raw_brand_name)
     return brand_name
 
-def normalize_model(brand_name: str, drom_raw_model: DromRawGenerationsEntity) -> str:
+def normalize_model(drom_raw_model: DromRawGenerationsEntity) -> str:
     raw_model_name = drom_raw_model.car_model_name.lower().strip()
 
     car_model_name = raw_model_name

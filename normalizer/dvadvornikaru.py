@@ -1,8 +1,7 @@
 import re
 
 from domain.models.dvadvornikaru import AdditionalModelData, BrushModelData, DvaDvornikaModelRaw, DvaDvornikaDataNorm
-from .proper_names import ProperNames
-# from normalizer.proper_names import ProperNames
+from normalizer.proper_names import ProperNames
 
 
 def year_extractor(data):

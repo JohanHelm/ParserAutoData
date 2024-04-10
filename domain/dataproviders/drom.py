@@ -63,15 +63,19 @@ class CarsModelsManager:
             self.raw_drom_data.append(drom_raw_generations_entity)
 
     def pickle_raw_drom(self):
+        directory_name = self.output_filepath.joinpath("pickles")
+        new_directory = Path(directory_name)
+        new_directory.mkdir(exist_ok=True)
         filename = f"{self.vehicle_type}_raw_drom_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = new_directory.joinpath(filename)
+
         with open(fullfilepath, "wb") as file:
             pickle.dump(self.raw_drom_data, file)
             logger.info(f"save binary file {fullfilepath}")
 
     def unpickle_raw_drom(self):
         filename = f"{self.vehicle_type}_raw_drom_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = self.output_filepath.joinpath(f"pickles/{filename}")
         if Path.exists(fullfilepath):
             with open(fullfilepath, "rb") as file:
                 logger.info(f"open binary file {fullfilepath}")

@@ -56,14 +56,16 @@ async def check_for_updates(callback: CallbackQuery):
     chdir(WORKDIR)
     cmd = f'git pull origin main '
     update_request = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, universal_newlines=True)
-    update_result = update_request.communicate()[0]
-    if 'Already up to date.\n' in update_result:
+    update_result = update_request.communicate()
+    if 'Already up to date.\n' in update_result[0]:
         chdir(current_directory)
+        logger.info(f"update attempt with {update_result}")
         await callback.message.edit_text(text="Приложение в актуальном состоянии, обновление не требуется.",
                                          reply_markup=callback.message.reply_markup)
     else:
         await callback.message.edit_text(text="Приложение было обновлено. Сейчас приложение будет перезапущено.\n"
                                               "Подождите одну минуту и перезапустите бота.")
+        logger.info(f"update attempt with {update_result}")
         system("sudo systemctl restart car_brush")
 
 

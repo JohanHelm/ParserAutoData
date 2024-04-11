@@ -64,6 +64,7 @@ async def check_for_updates(callback: CallbackQuery):
     else:
         await callback.message.edit_text(text="Приложение было обновлено. Сейчас приложение будет перезапущено.\n"
                                               "Подождите одну минуту и перезапустите бота.")
+        system("sudo systemctl restart car_brush")
 
 
 async def total_annihilation(callback: CallbackQuery):

@@ -11,3 +11,6 @@
 конечные таблицы - out/tables
 фотки - out/photos
 
+
+check for update function
+

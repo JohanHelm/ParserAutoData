@@ -3,6 +3,7 @@ from parser.dromru.html_parser import DromSoupParser
 from pathlib import Path
 from tqdm import tqdm
 
+
 from loguru import logger
 
 from domain.models.dromru import (
@@ -15,6 +16,7 @@ from downloader.retry import RetryManager
 from filewriter.excel import ExcelWriter
 from filewriter.params import DromNormParams
 from normalizer.drom_norm import normalize_drom_raw_data
+from utils.dirs_files_checker import create_results_tables_dir, create_pickle_dir
 
 
 class CarsModelsManager:
@@ -31,9 +33,7 @@ class CarsModelsManager:
         self.output_filepath = output_filepath
         self.drom_model: DromModelEntity = DromModelEntity()
         self.drom_brand: DromBrandEntity = DromBrandEntity()
-        filename = f"{vehicle_type}_norm_drom_data.xlsx"
-        fullfilepath = self.output_filepath.joinpath(filename)
-        self.writer: ExcelWriter = ExcelWriter(fullfilepath, DromNormParams())
+
         self.retry_manager: RetryManager = RetryManager()
         self.raw_drom_data: list[DromRawGenerationsEntity] = []
         self.drom_data: list[DromGenerationEntity] = []
@@ -63,12 +63,9 @@ class CarsModelsManager:
             self.raw_drom_data.append(drom_raw_generations_entity)
 
     def pickle_raw_drom(self):
-        directory_name = self.output_filepath.joinpath("pickles")
-        new_directory = Path(directory_name)
-        new_directory.mkdir(exist_ok=True)
+        new_directory = create_pickle_dir()
         filename = f"{self.vehicle_type}_raw_drom_data.pickle"
         fullfilepath = new_directory.joinpath(filename)
-
         with open(fullfilepath, "wb") as file:
             pickle.dump(self.raw_drom_data, file)
             logger.info(f"save binary file {fullfilepath}")
@@ -82,15 +79,16 @@ class CarsModelsManager:
                 self.raw_drom_data = pickle.load(file)
 
     def pickle_norm_drom(self):
+        new_directory = create_pickle_dir()
         filename = f"{self.vehicle_type}_norm_drom_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = new_directory.joinpath(filename)
         with open(fullfilepath, "wb") as file:
             pickle.dump(self.drom_data, file)
             logger.info(f"save binary file {fullfilepath}")
 
     def unpickle_norm_drom(self):
         filename = f"{self.vehicle_type}_norm_drom_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = self.output_filepath.joinpath(f"pickles/{filename}")
         if Path.exists(fullfilepath):
             with open(fullfilepath, "rb") as file:
                 self.drom_data = pickle.load(file)
@@ -128,18 +126,24 @@ class CarsModelsManager:
         )
 
     def save_normalized_data_to_excel(self):
+        new_directory = create_results_tables_dir()
+        filename = f"{self.vehicle_type}_norm_drom_data.xlsx"
+        fullfilepath = new_directory.joinpath(filename)
+        writer: ExcelWriter = ExcelWriter(fullfilepath, DromNormParams())
+
         logger.info(
             f"Started to write excel with {self.vehicle_type} from {self.drom_catalog_url}"
         )
-        tqdm_params = {
-            'desc': 'Write to excel',
-            'total': len(self.drom_data),
-            'miniters': 1,
-            'unit': 'generation',
-            'unit_scale': True, }
-        for generation in tqdm(self.drom_data, **tqdm_params):
-            self.writer.write_data_row(generation)
-        self.writer.workbook.close()
+        # tqdm_params = {
+        #     'desc': 'Write to excel',
+        #     'total': len(self.drom_data),
+        #     'miniters': 1,
+        #     'unit': 'generation',
+        #     'unit_scale': True, }
+        # for generation in tqdm(self.drom_data, **tqdm_params):
+        for generation in self.drom_data:
+            writer.write_data_row(generation)
+        writer.workbook.close()
         logger.info(
             f"Finished to write excel with {self.vehicle_type} from {self.drom_catalog_url}"
         )
@@ -176,12 +180,12 @@ class CarsModelsManager:
                 self.drom_data[position] = new_car_data
 
     def execute(self):
-        # self.process_all_brands()
-        # self.pickle_raw_drom()
+        self.process_all_brands()
+        self.pickle_raw_drom()
         self.unpickle_raw_drom()
         self.unpickle_norm_drom()
         self.normalize_markets_data()
-        # self.pickle_norm_drom()
-        # self.unpickle_norm_drom()
-        # self.save_normalized_data_to_excel()
-        # print(self.drom_data[0])
+        self.pickle_norm_drom()
+        self.unpickle_norm_drom()
+        self.save_normalized_data_to_excel()
+

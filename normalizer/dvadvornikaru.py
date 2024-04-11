@@ -206,7 +206,3 @@ def normalize_raw_dvorniki_data(raw_data_item: DvaDvornikaModelRaw) -> DvaDvorni
         link=raw_data_item.link
     )
     return normalized_dvorniki
-
-
-print(extract_brush_data(
-    'Марка: AC Модель: Ace Родстер\nГоды выпуска: 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005\nРазмер щеток АС Айс: 500 мм\nи 500 мм\nТип крепления передних дворников - крючок\nКак установить щетки на AC Ace →'))

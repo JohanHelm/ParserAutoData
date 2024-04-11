@@ -1,9 +1,7 @@
 import pickle
 from pathlib import Path
-
 from loguru import logger
 from requests import Response
-from tqdm import tqdm
 
 from domain.models.dvadvornikaru import DvaDvornikaBrand, DvaDvornikaModelRaw, DvaDvornikaDataNorm
 from downloader.httpdownloader import RequestsDownloader
@@ -12,6 +10,7 @@ from normalizer.dvadvornikaru import normalize_raw_dvorniki_data, normalize_bad_
 from parser.twodvornikaru.htmlparser import BsParser
 from filewriter.excel import ExcelWriter
 from filewriter.params import DvornikiNormParams
+from utils.dirs_files_checker import create_results_tables_dir, create_pickle_dir
 
 
 class WindshieldWiperManager:
@@ -39,14 +38,7 @@ class WindshieldWiperManager:
 
     def process_auto_mark_data(self):
         logger.info(f"proceed models data for {self.main_url}")
-        tqdm_params = {
-            'desc': 'Get brands',
-            'total': len(self.dvorniki_brands_list),
-            'miniters': 1,
-            'unit': 'brand',
-            'unit_scale': True, }
-        for brand in tqdm(self.dvorniki_brands_list, **tqdm_params):
-            # for brand in self.dvorniki_brands_list:
+        for brand in self.dvorniki_brands_list:
             mark_page_html: Response | None = self.loader.safe_get(url=brand.link, params=RequestManagerParams())
             models = self.parser.parse_mark_page(mark_page_html, brand)
 
@@ -55,29 +47,23 @@ class WindshieldWiperManager:
         self.process_auto_mark_brush_data()
 
     def process_auto_mark_brush_data(self):
-        tqdm_params = {
-            'desc': 'Get models',
-            'total': len(self.dvorniki_models_list_raw),
-            'miniters': 1,
-            'unit': 'model',
-            'unit_scale': True, }
-        for model in tqdm(self.dvorniki_models_list_raw, **tqdm_params):
-        # for model in self.dvorniki_models_list_raw:
+        for model in self.dvorniki_models_list_raw:
             logger.info(f"proceed model brush data for {model.brand_name} {model.car_model_name}")
             brush_page_html: Response | None = self.loader.safe_get(url=model.link, params=RequestManagerParams())
             brush_data = self.parser.parse_model_brush_data(brush_page_html)
             model.raw_data_brush = brush_data
 
     def pickle_raw_dvorniki(self):
+        new_directory = create_pickle_dir()
         filename = f"dvorniki_raw_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = new_directory.joinpath(filename)
         with open(fullfilepath, "wb") as file:
             pickle.dump(self.dvorniki_models_list_raw, file)
             logger.info(f"save binary file {fullfilepath}")
 
     def unpickle_raw_dvorniki(self):
         filename = f"dvorniki_raw_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = self.output_filepath.joinpath(f"pickles/{filename}")
         if Path.exists(fullfilepath):
             with open(fullfilepath, "rb") as file:
                 logger.info(f"open binary file {fullfilepath}")
@@ -130,15 +116,16 @@ class WindshieldWiperManager:
             normalize_bad_models(partially_norm)
 
     def pickle_norm_dvorniki(self):
+        new_directory = create_pickle_dir()
         filename = f"dvorniki_norm_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = new_directory.joinpath(filename)
         with open(fullfilepath, "wb") as file:
             pickle.dump(self.dvorniki_data_norm_list, file)
             logger.info(f"save binary file {fullfilepath}")
 
     def unpickle_norm_dvorniki(self):
         filename = f"dvorniki_norm_data.pickle"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = self.output_filepath.joinpath(f"pickles/{filename}")
         if Path.exists(fullfilepath):
             with open(fullfilepath, "rb") as file:
                 logger.info(f"open binary file {fullfilepath}")
@@ -159,23 +146,18 @@ class WindshieldWiperManager:
 
     def save_excel(self):
         logger.info("start saving data in excel")
+        new_directory = create_results_tables_dir()
         filename = f"dvorniki_norm_data.xlsx"
-        fullfilepath = self.output_filepath.joinpath(filename)
+        fullfilepath = new_directory.joinpath(filename)
         writer = ExcelWriter(fullfilepath, DvornikiNormParams())
-        tqdm_params = {
-            'desc': 'Write to excel',
-            'total': len(self.dvorniki_data_norm_list),
-            'miniters': 1,
-            'unit': 'dvorniki_data',
-            'unit_scale': True, }
-        for dvorniki_data_norm in tqdm(self.dvorniki_data_norm_list, **tqdm_params):
+        for dvorniki_data_norm in self.dvorniki_data_norm_list:
             writer.write_data_row(dvorniki_data_norm)
         writer.workbook.close()
         logger.info(f"saved data in excel file {fullfilepath}")
 
     def execute(self):
-        # self.process_main_data()
-        # self.pickle_raw_dvorniki()
+        self.process_main_data()
+        self.pickle_raw_dvorniki()
         self.unpickle_raw_dvorniki()
         self.unpickle_norm_dvorniki()
         self.normalize_raw_dvorniki()

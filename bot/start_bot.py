@@ -52,13 +52,13 @@ async def process_launch_app(callback: CallbackQuery):
 
 
 async def check_for_updates(callback: CallbackQuery):
-    current_directory = Path.cwd()
-    chdir(WORKDIR)
-    cmd = f'git pull origin main '
+    # current_directory = Path.cwd()
+    # chdir(WORKDIR)
+    cmd = f'git pull origin main'
     update_request = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, universal_newlines=True)
     update_result = update_request.communicate()
     if 'Already up to date.\n' in update_result[0]:
-        chdir(current_directory)
+        # chdir(current_directory)
         logger.info(f"update attempt with {update_result}")
         await callback.message.edit_text(text="Приложение в актуальном состоянии, обновление не требуется.",
                                          reply_markup=callback.message.reply_markup)

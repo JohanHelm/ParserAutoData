@@ -10,7 +10,7 @@ from normalizer.dvadvornikaru import normalize_raw_dvorniki_data, normalize_bad_
 from parser.twodvornikaru.htmlparser import BsParser
 from filewriter.excel import ExcelWriter
 from filewriter.params import DvornikiNormParams
-from utils.dirs_files_checker import create_results_tables_dir, create_pickle_dir
+from utils.dirs_files_handler import create_results_tables_dir, create_pickle_dir
 
 
 class WindshieldWiperManager:

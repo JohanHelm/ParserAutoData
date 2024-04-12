@@ -16,7 +16,7 @@ from downloader.retry import RetryManager
 from filewriter.excel import ExcelWriter
 from filewriter.params import DromNormParams
 from normalizer.drom_norm import normalize_drom_raw_data
-from utils.dirs_files_checker import create_results_tables_dir, create_pickle_dir
+from utils.dirs_files_handler import create_results_tables_dir, create_pickle_dir
 
 
 class CarsModelsManager:

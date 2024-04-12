@@ -30,15 +30,28 @@ def unpickle(filename, data_path=output_filepath):
 def move_tables_files_to_smb_share():
     source_dir = output_filepath.joinpath("results/tables")
     dest_dir = Path("/home/user/results/tables")
+    # dest_dir = output_filepath.joinpath("user_results/tables")
     inner_dirs = os.listdir(source_dir)
     for dir_file in inner_dirs:
         source_path = source_dir.joinpath(dir_file)
         dest_path = dest_dir.joinpath(dir_file)
         os.replace(source_path, dest_path)
-        results_chown_chgrp(dest_path)
+        change_owner_recursive(dest_path)
 
 
 def results_chown_chgrp(file_path):
     owner = 1000
     group = 1000
     os.chown(file_path, owner, group)
+
+def change_owner_recursive(directory):
+    owner = 1000
+    group = 1000
+    os.chown(directory, owner, group)
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+            os.chown(file_path, owner, group)
+        for dir in dirs:
+            dir_path = os.path.join(root, dir)
+            change_owner_recursive(dir_path)

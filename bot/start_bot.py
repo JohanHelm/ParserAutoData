@@ -1,5 +1,5 @@
 from os import system
-from subprocess import PIPE, Popen
+from subprocess import PIPE, Popen, run
 from loguru import logger
 from time import sleep
 
@@ -79,11 +79,21 @@ async def total_annihilation(callback: CallbackQuery):
 
 
 async def check_vm_ipv4_address(callback: CallbackQuery):
-    command = "ip -4 addr | sed -ne 's|^.* inet \([^/]*\)/.* scope global.*$|\1|p' | awk '{print $1}' | head -1"
-    ipv4_addr = system(command)
-    await callback.message.edit_text(f"ip v4 адрес виртуалки\n{ipv4_addr}" , reply_markup=callback.message.reply_markup)
-
-
+    iface_name = ": ens33: "
+    result = run(["ip", "-4", "addr"], capture_output=True, text=True).stdout.split("\n")
+    stroka = [stroka for stroka in result if iface_name in stroka]
+    if stroka:
+        position = result.index(stroka[0])
+        for i in range(position, len(result)):
+            if result[i].startswith("    inet "):
+                stroka_with_address = result[i].strip()
+                ipv4_addr = stroka_with_address.split()[1]
+                await callback.message.edit_text(f"ip v4 адрес виртуалки\n{ipv4_addr}",
+                                                 reply_markup=callback.message.reply_markup)
+                break
+    else:
+        await callback.message.edit_text(f"{iface_name} is not found on this vm",
+                                         reply_markup=callback.message.reply_markup)
 
 
 dp.message.register(process_start_command, Command(commands="start"))
@@ -92,6 +102,7 @@ dp.callback_query.register(process_launch_app, F.data == "launch_the_app")
 dp.callback_query.register(check_for_updates, F.data == "try_to_update")
 dp.callback_query.register(total_annihilation, F.data == "launch_the_annihilation")
 dp.callback_query.register(check_vm_ipv4_address, F.data == "check_vm_ipv4")
+
 
 async def start_bot():
     logger.info(f"{bot} is on polling")

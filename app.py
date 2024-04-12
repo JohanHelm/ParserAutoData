@@ -4,6 +4,7 @@ from loguru import logger
 from domain.dataproviders.drom import CarsModelsManager
 from domain.dataproviders.dvadvornikaru import WindshieldWiperManager
 from utils.mark_duration import duration
+from utils.dirs_files_handler import move_tables_files_to_smb_share
 from settings import output_filepath
 
 
@@ -51,3 +52,11 @@ class MainAppManager:
             wwm.execute()
             end = perf_counter()
             logger.info(f"Full time spent collecting data from https://www.2dvornika.ru/ is {duration(start, end)}")
+
+        move_tables_files_to_smb_share()
+
+
+
+
+
+

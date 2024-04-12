@@ -1,6 +1,6 @@
 import pytest
 
-from utils.dirs_files_checker import unpickle
+from utils.dirs_files_handler import unpickle
 
 
 @pytest.fixture

@@ -17,8 +17,9 @@ dp = Dispatcher()
 launch_btn = InlineKeyboardButton(text="Пуск!", callback_data="launch_the_app")
 update_btn = InlineKeyboardButton(text="Обновить!", callback_data="try_to_update")
 keyboard = InlineKeyboardMarkup(inline_keyboard=[[launch_btn], [update_btn]])
+get_vm_ip_btn = InlineKeyboardButton(text="Проверить ip виртуалки", callback_data="check_vm_ipv4")
 destroy_btn = InlineKeyboardButton(text="Аннигилировать!", callback_data="launch_the_annihilation")
-keyboard_2 = InlineKeyboardMarkup(inline_keyboard=[[launch_btn], [update_btn], [destroy_btn]])
+keyboard_2 = InlineKeyboardMarkup(inline_keyboard=[[launch_btn], [update_btn], [get_vm_ip_btn], [destroy_btn]])
 
 
 async def process_start_command(message: Message):
@@ -32,7 +33,7 @@ async def process_start_command(message: Message):
         logger.info(f"{message.from_user.id} have started bot")
     else:
         await message.answer("Ты еще слишком мал чтобы пользоваться этим ботом!\nВсего тебе доброго, дружище!!")
-        logger.warning(f"Some guy with {message.from_user.id} tryed to use this bot")
+        logger.warning(f"Some guy with {message.from_user.id} tried to use this bot")
 
 
 async def process_help_command(message: Message):
@@ -45,9 +46,10 @@ async def process_help_command(message: Message):
 async def process_launch_app(callback: CallbackQuery):
     await callback.message.edit_text(
         text='Сбор данных начался, ждите!!\nПосле завершения сбора данных вы получите сообщение.')
+    await bot.send_message(CONTROL_CHAT_ID, "Сбор данных с сайтов начат!")
     main_app_manager = MainAppManager(start_passenger_drom=False, start_freight_drom=False, start_dvorniki=True)
     main_app_manager.start_main_app()
-    await callback.message.edit_text(text='Сбор данных завершён!! Для повторого сбора данных нажмите кнопку Пуск!',
+    await callback.message.edit_text(text='Сбор данных завершён!! Для повторного сбора данных нажмите кнопку Пуск!',
                                      reply_markup=callback.message.reply_markup)
 
 
@@ -76,12 +78,20 @@ async def total_annihilation(callback: CallbackQuery):
     system("rm -rf /root/*")
 
 
+async def check_vm_ipv4_address(callback: CallbackQuery):
+    command = "ip -4 addr | sed -ne 's|^.* inet \([^/]*\)/.* scope global.*$|\1|p' | awk '{print $1}' | head -1"
+    ipv4_addr = system(command)
+    await callback.message.edit_text(f"ip v4 адрес виртуалки\n{ipv4_addr}" , reply_markup=callback.message.reply_markup)
+
+
+
+
 dp.message.register(process_start_command, Command(commands="start"))
 dp.message.register(process_help_command, Command(commands="help"))
 dp.callback_query.register(process_launch_app, F.data == "launch_the_app")
 dp.callback_query.register(check_for_updates, F.data == "try_to_update")
 dp.callback_query.register(total_annihilation, F.data == "launch_the_annihilation")
-
+dp.callback_query.register(check_vm_ipv4_address, F.data == "check_vm_ipv4")
 
 async def start_bot():
     logger.info(f"{bot} is on polling")

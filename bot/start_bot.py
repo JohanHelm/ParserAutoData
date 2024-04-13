@@ -47,7 +47,7 @@ async def process_launch_app(callback: CallbackQuery):
     await callback.message.edit_text(
         text='Сбор данных начался, ждите!!\nПосле завершения сбора данных вы получите сообщение.')
     await bot.send_message(CONTROL_CHAT_ID, "Сбор данных с сайтов начат!")
-    main_app_manager = MainAppManager(start_passenger_drom=False, start_freight_drom=False, start_dvorniki=False)
+    main_app_manager = MainAppManager(start_passenger_drom=True, start_freight_drom=True, start_dvorniki=True)
     main_app_manager.start_main_app()
     await callback.message.edit_text(text='Сбор данных завершён!! Для повторного сбора данных нажмите кнопку Пуск!',
                                      reply_markup=callback.message.reply_markup)

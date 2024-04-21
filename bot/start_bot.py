@@ -1,11 +1,13 @@
 from os import system
 from subprocess import PIPE, Popen, run
 from loguru import logger
-from time import sleep
+from time import sleep, perf_counter
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+
+from utils.mark_duration import duration
 from settings import TOKEN, DEVELOPER_ID, OWNER_ID, CONTROL_CHAT_ID
 from app import MainAppManager
 
@@ -48,8 +50,11 @@ async def process_launch_app(callback: CallbackQuery):
         text='Сбор данных начался, ждите!!\nПосле завершения сбора данных вы получите сообщение.')
     await bot.send_message(CONTROL_CHAT_ID, "Сбор данных с сайтов начат!")
     main_app_manager = MainAppManager(start_passenger_drom=True, start_freight_drom=True, start_dvorniki=True)
+    start = perf_counter()
     main_app_manager.start_main_app()
-    await callback.message.edit_text(text='Сбор данных завершён!! Для повторного сбора данных нажмите кнопку Пуск!',
+    end = perf_counter()
+    await callback.message.edit_text(text=f'Сбор данных завершён за {duration(start, end)}!!\n'
+                                          f' Для повторного сбора данных нажмите кнопку Пуск!',
                                      reply_markup=callback.message.reply_markup)
 
 

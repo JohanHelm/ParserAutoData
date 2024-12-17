@@ -47,6 +47,7 @@ class CarsModelsManager:
             self.drom_brand = brand
             self.process_one_brand()
             logger.info(f"{self.drom_brand.brand_name} is saved")
+            break
 
     def process_one_brand(self) -> None:
         models_iterator = self.parser.get_and_parse_models_page(self.drom_brand)
@@ -55,6 +56,7 @@ class CarsModelsManager:
             self.drom_model = model
             self.process_one_model()
             models_amount += 1
+            break
         logger.info(f"Brand {self.drom_brand.brand_name} got {models_amount} models.")
 
     def process_one_model(self) -> None:

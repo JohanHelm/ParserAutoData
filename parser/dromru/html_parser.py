@@ -27,8 +27,10 @@ class DromSoupParser:
                 with attempt:
                     brands_page: Response | None = self.loader.safe_get(url, params=RequestManagerParams())
                     soup = BeautifulSoup(brands_page.text, self.parse_mode)
+                    # auto_vendor_table = soup.find(
+                    #     'div', attrs={"class": 'css-18clw5c ehmqafe0', "data-ftid": "component_cars-list"})
                     auto_vendor_table = soup.find(
-                        'div', attrs={"class": 'css-18clw5c ehmqafe0', "data-ftid": "component_cars-list"})
+                        'a', attrs={"class": 'css-1q66we5 e4ojbx42', "data-ftid": "component_cars-list-item_hidden-link"})
                     if not auto_vendor_table:
                         logger.info(f"got empty main page")
                     row_brands = auto_vendor_table.find_all("a")
